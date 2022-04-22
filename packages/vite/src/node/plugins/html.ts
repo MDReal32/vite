@@ -48,7 +48,7 @@ const inlineCSSRE = /__VITE_INLINE_CSS__([^_]+_\d+)__/g
 // Do not allow preceding '.', but do allow preceding '...' for spread operations
 const inlineImportRE =
   /(?<!(?<!\.\.)\.)\bimport\s*\(("([^"]|(?<=\\)")*"|'([^']|(?<=\\)')*')\)/g
-const htmlLangRE = /\.(html|htm)$/
+const htmlLangRE = /\.(html?)$/
 
 export const isHTMLProxy = (id: string): boolean => htmlProxyRE.test(id)
 
